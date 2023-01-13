@@ -23,7 +23,7 @@ public class BookingScraper implements Scraper {
 
     public String nameHotels() {
         String url = "https://www.booking.com/searchresults.es.html?label=es-JCB2UqznXtCO_RDP_nj5CAS410545262609%3Apl%3Ata%3Ap1%3Ap22.563.000%3Aac%3Aap%3Aneg%3Afi%3Atikwd-65526620%3Alp9047034%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Ye8F2ouj63ytkBtrYs5TAfs&aid=376371&ss=Gran+Canaria%2C+Espa%C3%B1a&ssne=Islas+Canarias&ssne_untouched=Islas+Canarias&lang=es&src=index&dest_id=754&dest_type=region&ac_position=0&ac_click_type=b&ac_langcode=es&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=f5f479603f410111&ac_meta=GhBmNWY0Nzk2MDNmNDEwMTExIAAoATICZXM6CUdyYW4gQ2FuYUAASgBQAA%3D%3D&checkin=2023-01-26&checkout=2023-01-29&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure&nflt=ht_id%3D204&offset=";
-        String path;
+        String path = "";
         List<String> hotelsNames = new ArrayList<>();
         for (int i = 0; i < 175; i += 25) {
             path = url + i;
